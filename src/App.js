@@ -15,14 +15,14 @@ function App() {
       });
   }, []);
 
-  // Function to run a project when the button is clicked
+  // to run a project
   const runProject = (projectName) => {
-    axios.get(`http://localhost:5000/run/${projectName}`)  // Flask endpoint for running projects
+    axios.get(`http://localhost:5000/run/${projectName}`)  
       .then(response => {
-        alert(response.data.message || 'Success!');  // Display success message
+        alert(response.data.message || 'Success!');  
       })
       .catch(error => {
-        alert('There was an error running the project!');  // Handle errors
+        alert('There was an error running the project!');  // error handling
         console.error('Error running the project!', error);
       });
   };
@@ -36,7 +36,7 @@ function App() {
             {project} 
             <button onClick={() => runProject(project)} style={{ marginLeft: '10px' }}>
               Run
-            </button>  {/* Button to run the project */}
+            </button>  
           </li>
         ))}
       </ul>

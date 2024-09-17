@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Path to your projects directory
-PROJECTS_DIR = r'C:\Users\coeng\OneDrive\Desktop\react-perceptai\perceptai_backend\projects'
+PROJECTS_DIR = r'C:\Users\coeng\OneDrive\Desktop\perceptai\perceptai_backend\projects'
 
 @app.route('/')
 def index():
