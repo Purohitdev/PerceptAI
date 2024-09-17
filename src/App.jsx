@@ -1,12 +1,13 @@
 import { BackgroundLines } from './components/ui/background-lines';
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import Button from './components/ui/Button';  
+import React from 'react';
+import './App.css'
 
 function App() {
   return (
     <div>
       <BackgroundLines />
-      {/* Other components */}
+      <Button />
     </div>
   );
 }
