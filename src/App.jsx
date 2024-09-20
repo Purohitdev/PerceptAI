@@ -1,13 +1,11 @@
-import { BackgroundLines } from './components/ui/background-lines';
-import Button from './components/ui/Button';  
+import Hero from './Components/Hero';
 import React from 'react';
 import './App.css'
 
 function App() {
   return (
     <div>
-      <BackgroundLines />
-      <Button />
+      <Hero />
     </div>
   );
 }
