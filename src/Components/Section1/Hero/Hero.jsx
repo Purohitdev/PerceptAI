@@ -62,19 +62,22 @@ const LandingPage = () => {
             <div className="absolute inset-0 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] back" >
             <div className="wrap">
             <div className="box">
+              <div className="image">
             <img src={image1} alt="PerceptAI Logo" className="h-10" />
+
+              </div>
               </div>
               <div className="box">
-                hello
+                <img src={image1} alt="PerceptAI Logo" className="h-10" />
               </div>
               <div className="box">
-                hello
+                <img src={image1} alt="PerceptAI Logo" className="h-10" />
               </div>
               <div className="box">
-                hello
+                <img src={image1} alt="PerceptAI Logo" className="h-10" />
               </div>
               <div className="box">
-                hello
+                <img src={image1} alt="PerceptAI Logo" className="h-10" />
               </div>
             </div>
             </div>
