@@ -1,6 +1,7 @@
 // ProjectGrid.js
 import React from 'react';
 import ProjectCard from '../Card/ProjectCard';
+import '../Section2.css'
 
 // Mock project data (could be imported from another file if needed)
 const projects = [
@@ -58,7 +59,7 @@ const projects = [
 
 function ProjectGrid() {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="projectGrid grid grid-cols-3 gap-4">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

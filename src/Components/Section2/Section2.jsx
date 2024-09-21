@@ -2,10 +2,12 @@
 import React from 'react';
 import Sidebar from '../Section2/SideBar/SideBar';
 import ProjectGrid from './ProjectGrid/ProjectGrid';
+import './Section2.css'
+import '../../index.css'
 
 function Section2() {
   return (
-    <div className="flex">
+    <div className="root flex">
       {/* Sidebar Component */}
       <Sidebar />
 
