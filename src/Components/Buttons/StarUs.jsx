@@ -23,7 +23,9 @@ function StarUs() {
     ></path>
     <path d="M9 18c-4.51 2-5-2-7-2"></path>
   </svg>
+  <a href="https://github.com/zaid-commits/perceptai" target='_blank'>
   <span class="text-white">Star on Github</span>
+  </a>
   <span
     class="flex items-center ml-4 group-hover:text-yellow-500 transition-colors duration-200 ease-in-out"
   >
