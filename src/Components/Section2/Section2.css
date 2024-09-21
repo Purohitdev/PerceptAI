@@ -10,3 +10,7 @@
 .bg-blue-500{
     background-color: rgba(0, 0, 255, 0.467) !important;
 }
+
+.heading{
+    transform: translateX(-68%);
+}
