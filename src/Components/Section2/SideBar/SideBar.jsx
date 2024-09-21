@@ -3,7 +3,7 @@ import React from 'react';
 
 function Sidebar() {
   return (
-    <div className="w-1/5 bg-gray-100 p-4 rounded-md shadow-md h-full">
+    <div className="w-1/5 bg-gray-100 p-4 rounded-md shadow-md h-full side">
       <h2 className="text-xl font-bold mb-4">Sidebar</h2>
       {/* Add sidebar content here */}
       <p>the sidebar content.</p>

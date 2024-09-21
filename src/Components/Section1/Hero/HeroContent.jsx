@@ -1,11 +1,17 @@
 import React from 'react'
 import StarUs from '../Buttons/StarUs'
 import GetStarted from '../Buttons/GetStarted'
+import FloatingNavbar from '../../Section1/Navbar/Navbar'; 
+
 
 
 function HeroContent() {
   return (
     <div className="hero-content">
+           <FloatingNavbar />
+
+       
+
       <div className="content-wrapper">
         <div className="text-container">
           <h1 className="hero-title">

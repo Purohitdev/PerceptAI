@@ -69,3 +69,66 @@ html{
     font-size: 3.75rem;
   }
 }
+
+
+.box{
+  height: 400px;
+  width: 300px;
+  transform: rotate(-20deg);
+  background-color: rgba(255, 0, 0, 0.336);
+
+}
+
+.box:nth-child(2){
+  transform: rotate(-10deg);
+  background-color: rgba(0, 255, 255, 0.342);
+
+}
+
+.box:nth-child(3){
+  transform: rotate(0deg);
+  background-color: rgba(255, 228, 196, 0.288);
+
+  
+}
+
+.box:nth-child(4){
+  transform: rotate(10deg);
+  background-color: rgba(137, 43, 226, 0.32);
+
+  
+}
+
+.box:nth-child(5){
+  transform: rotate(20deg);
+  background-color: rgba(255, 192, 203, 0.282);
+
+  
+}
+
+.wrap{
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.box{
+  margin-top:12%;
+  position: absolute;
+  left: 40%;
+ 
+}
+
+.side{
+  margin-top: 122px;
+  background-color: rgba(255, 255, 255, 0.077);
+  border: 1px solid rgba(128, 128, 128, 0.465);
+  color: aliceblue;
+  
+  
+}
+
+
+.hover\:bg-gray-200:hover{
+  background-color: rgba(0, 0, 255, 0.383) !important;
+}
