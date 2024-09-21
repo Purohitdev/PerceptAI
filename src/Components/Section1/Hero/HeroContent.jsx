@@ -12,8 +12,7 @@ function HeroContent() {
             AI Infused Vision Directory
           </h1>
           <p className="hero-description">
-            Ready-to-use, simply copy and paste into your next project. All snippets
-            crafted with Tailwind CSS and Vanilla CSS for easy integration.
+            Explore the world of AI and Machine Learning with next level Computer Vision projects, dive into <strong>open-source</strong> project directory now!
           </p>
           <div className="button-container">
             <div className="button-wrapper">
