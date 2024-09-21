@@ -2,7 +2,7 @@ import React from 'react';
 
 function GetStarted() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center bt1">
       <div className="relative group">
         <button
           className="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal-400"
