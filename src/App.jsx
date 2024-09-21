@@ -1,4 +1,4 @@
-import LandingPage from './Components/Hero/Hero';
+import LandingPage from './Components/Section1/Hero/Hero';
 import React from 'react';
 import './App.css'
 
