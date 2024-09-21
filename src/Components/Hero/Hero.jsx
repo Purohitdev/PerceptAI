@@ -6,12 +6,12 @@ import HeroContent from './HeroContent';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col h-screen overflow-hidden">
       {/* Navbar */}
       {/* <Navbar /> */}
 
       {/* Main Content */}
-      <main className="flex-grow flex items-center justify-center relative">
+      <main className="flex-grow flex items-center justify-center relative overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-cover bg-center bg-no-repeat filter brightness-[27%]">
