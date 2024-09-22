@@ -1,12 +1,13 @@
 import React from 'react';
-import GetStarted from '../Buttons/GetStarted';
-import StarUs from '../Buttons/StarUs';
 import FloatingNavbar from '../../Section1/Navbar/Navbar';
 import HeroContent from './HeroContent';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import image1 from '../../../assets/Images/image1.jpg';
+import image2 from '../../../assets/Images/image2.jpg';
+import image3 from '../../../assets/Images/image3.jpg';
+import image4 from '../../../assets/Images/image4.jpg';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -68,16 +69,16 @@ const LandingPage = () => {
               </div>
               </div>
               <div className="box">
-                <img src={image1} alt="PerceptAI Logo" className="h-10" />
+                <img src={image1} alt="Image 1" className="h-10" />
               </div>
               <div className="box">
-                <img src={image1} alt="PerceptAI Logo" className="h-10" />
+                <img src={image2} alt="Image 2" className="h-10" />
               </div>
               <div className="box">
-                <img src={image1} alt="PerceptAI Logo" className="h-10" />
+                <img src={image3} alt="Image 3" className="h-10" />
               </div>
               <div className="box">
-                <img src={image1} alt="PerceptAI Logo" className="h-10" />
+                <img src={image4} alt="Image 4" className="h-10" />
               </div>
             </div>
             </div>
