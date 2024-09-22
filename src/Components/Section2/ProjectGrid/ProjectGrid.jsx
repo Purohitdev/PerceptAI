@@ -1,4 +1,3 @@
-// ProjectGrid.js
 import React from 'react';
 import ProjectCard from '../Card/ProjectCard';
 const projects = [
