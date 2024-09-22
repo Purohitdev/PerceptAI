@@ -16,7 +16,7 @@ function GetStarted() {
             <div className="relative z-10 flex items-center space-x-2">
               
               <span className="transition-all duration-500 group-hover:translate-x-1">
-                Let's get started
+               <a href="#featuredProjects">Let's get started</a> 
               </span>
               <svg
                 className="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
