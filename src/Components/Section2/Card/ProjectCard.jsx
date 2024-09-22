@@ -17,8 +17,8 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="p-5">
         <h2 className="text-xl font-bold text-white mb-2 truncate">{project.title}</h2>
-        <a href="#">
-          <p className="text-purple-400 text-sm mb-3 font-medium">{project.author}</p>
+        <a href={`https://github.com/${project.author}`}>
+        <p className="text-purple-400 text-sm mb-3 font-medium">{project.author}</p>
         </a>
         <p className="text-gray-300 text-sm mb-4 line-clamp-2">{project.description}</p>
         <div className="flex items-center justify-between mb-4">
