@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50"></div>
-        <span className="absolute top-3 left-3 bg-purple-800 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
+        <span className="absolute top-3 left-3 bg-purple-800 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-80">
           {project.category}
         </span>
       </div>
