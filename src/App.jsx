@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/App.js
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
@@ -62,52 +63,26 @@ const App = () => {
     // Cleanup (if needed)
     // imageTensor.dispose();
   };
+=======
+import LandingPage from './Components/Section1/Hero/Hero';
+import React from 'react';
+import './App.css'
+import Section2 from './Components/Section2/Section2';
+import AnimatedNewsletter from './Components/Extras/Newsletter';
+import BackendCheck from './Components/Footer/BackendCheck';
+>>>>>>> parent of 3c3362b (client side test)
 
+function App() {
   return (
-    <div style={{ padding: '20px', textAlign: 'center' }}>
-      <h1>Available Projects</h1>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <ul style={{ listStyleType: 'none', padding: 0 }}>
-        {projects.map((project) => (
-          <li key={project} style={{ margin: '10px 0' }}>
-            <span style={{ fontSize: '18px', fontWeight: 'bold' }}>{project}</span>
-            <button
-              style={{
-                marginLeft: '10px',
-                padding: '5px 10px',
-                backgroundColor: '#007BFF',
-                color: 'white',
-                border: 'none',
-                borderRadius: '5px',
-                cursor: 'pointer'
-              }}
-              onClick={() => runProject(project)}
-            >
-              Run
-            </button>
-          </li>
-        ))}
-      </ul>
+    <div>
 
-      <h2>Camera Feed</h2>
-      <video ref={videoRef} autoPlay playsInline style={{ width: '100%', maxWidth: '600px' }}></video>
-      <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480"></canvas>
-      <button
-        onClick={runInference}
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: '#28a745',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
-      >
-        Run Inference
-      </button>
+      <LandingPage />
+      {/* <ProjectLinks /> */}
+      <Section2 />
+      <AnimatedNewsletter />
+      <BackendCheck />
     </div>
   );
-};
+}
 
 export default App;
