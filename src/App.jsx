@@ -8,7 +8,6 @@ function App() {
     <div>
 
       <LandingPage />
-      {/* <ProjectLinks /> */}
       <Section2 />
     </div>
   );
