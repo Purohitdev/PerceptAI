@@ -8,7 +8,6 @@ import '../../index.css'
 function Section2() {
   return (
     <div className="root flex">
-      {/* Sidebar Component */}
       <Sidebar />
 
       {/* Main content with Project Grid */}

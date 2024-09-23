@@ -4,47 +4,56 @@ import HeroContent from './HeroContent';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import image1 from '../../../assets/Images/image1.jpg';
-import image2 from '../../../assets/Images/image2.jpg';
-import image3 from '../../../assets/Images/image3.jpg';
-import image4 from '../../../assets/Images/image4.jpg';
 gsap.registerPlugin(ScrollTrigger);
 
 
 const LandingPage = () => {
 
-  
+
   useGSAP(() => {
 
 
-   
-    gsap.from( ".navbar", {
-      y:-100,
-      opacity:0,
-      duration:1,
+
+    gsap.from(".navbar", {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+
+    })
+
+
+
+
+    gsap.from(".wrap .box", {
+      x: 100,
       
-     })  
+      opacity: 0,
+      stagger: 0.7,
+      rotate: 80,
+      scrub: 1.5,
+      
 
-     
- 
+    })
 
-    gsap.from( ".wrap .box", {
-     x:100,
-     opacity:0,
-     stagger:0.7,
-     rotate:55,
-     scrub:1.5,
-    })  
+    gsap.from(".text-container h1 , .text-container p ", {
+
+      y: 40,
+      opacity: 0,
+      stagger: 1,
+
+    })
 
 
-    gsap.from( ".text-container h1 , .text-container p ", {
+    gsap.from(".ani",{
+      x:100,
+      height:700,
+      width:700,
+    })
 
-      y:40,
-      opacity:0,
-      stagger:1,
-  
-     })  
- 
+
+
+
+
 
 
 
@@ -52,38 +61,38 @@ const LandingPage = () => {
   })
 
   return (
+
     <div className="flex flex-col h-screen overflow-hidden">
       {/* Main Content */}
       <main className="flex-grow flex items-center justify-center relative overflow-hidden">
         <FloatingNavbar />
 
         <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-cover bg-center bg-no-repeat">
+          {/*  */}
 
-            <div className="absolute inset-0 bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] back" >
-            <div className="wrap">
-            <div className="box">
-              <div className="image">
-            <img src={image1} alt="PerceptAI Logo" className="h-10" />
-
-              </div>
+          <div class="relative h-full w-full bg-black">
+          <div className="wrap">
+              <div className="box">
               </div>
               <div className="box">
-                <img src={image1} alt="Image 1" className="h-10" />
               </div>
               <div className="box">
-                <img src={image2} alt="Image 2" className="h-10" />
               </div>
               <div className="box">
-                <img src={image3} alt="Image 3" className="h-10" />
               </div>
               <div className="box">
-                <img src={image4} alt="Image 4" className="h-10" />
               </div>
             </div>
+            <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
             </div>
-
+        
+            {/* <div class=" ani absolute left-[12%] right-50 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_400px_at_10%_300px,#fbfbfb16,#000)]">
+            </div> */}
           </div>
+
+
+
+
         </div>
 
         {/* Content */}
@@ -94,3 +103,18 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+
+
+{/* <div className="wrap">
+<div className="box">
+</div>
+<div className="box">
+</div>
+<div className="box">
+</div>
+<div className="box">
+</div>
+<div className="box">
+</div>
+</div> */}
