@@ -14,7 +14,7 @@ const App = () => {
     // Fetch the list of projects from the backend
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('https://perceptai-backend.onrender.com/'); // Update with your backend URL
+        const response = await axios.get('https://perceptai-backend.onrender.com'); // Update with your backend URL
         setProjects(response.data.projects);
       } catch (err) {
         setError('Error fetching projects');
