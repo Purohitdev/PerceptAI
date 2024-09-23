@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // src/App.js
 import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
@@ -64,12 +65,17 @@ const App = () => {
     // imageTensor.dispose();
   };
 =======
+=======
+>>>>>>> parent of 3c3362b (client side test)
 import LandingPage from './Components/Section1/Hero/Hero';
 import React from 'react';
 import './App.css'
 import Section2 from './Components/Section2/Section2';
 import AnimatedNewsletter from './Components/Extras/Newsletter';
 import BackendCheck from './Components/Footer/BackendCheck';
+<<<<<<< HEAD
+>>>>>>> parent of 3c3362b (client side test)
+=======
 >>>>>>> parent of 3c3362b (client side test)
 
 function App() {
