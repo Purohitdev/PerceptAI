@@ -14,7 +14,7 @@ const App = () => {
     // Fetch the list of projects from the backend
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/'); // Update with your backend URL
+        const response = await axios.get('https://perceptai-backend.onrender.com/'); // Update with your backend URL
         setProjects(response.data.projects);
       } catch (err) {
         setError('Error fetching projects');
@@ -39,7 +39,7 @@ const App = () => {
 
   const runProject = async (projectName) => {
     try {
-      const response = await axios.get(`http://localhost:5000/run/${projectName}`); // Update with your backend URL
+      const response = await axios.get(`https://perceptai-backend.onrender.com/run/${projectName}`); // Update with your backend URL
       alert(response.data.message);
     } catch (err) {
       alert(`Failed to run project: ${err.response?.data.error || err.message}`);
